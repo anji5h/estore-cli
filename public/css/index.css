@@ -1,0 +1,87 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
+.product-image {
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+img[src=""] {
+  display: none;
+}
+.card-image {
+  margin-top: 10px;
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+.card-name {
+  font-size: 17px;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption h4 {
+  text-transform: capitalize;
+  color: #fff;
+}
+.carousel img {
+  height: 300px;
+  margin: auto;
+  padding: 30px;
+  object-fit: contain;
+  margin-bottom: 60px;
+  background-color: transparent;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
